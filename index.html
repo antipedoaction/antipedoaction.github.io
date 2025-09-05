@@ -4,38 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anti Pedo Action</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
   <style>
     body {
       margin: 0;
-      height: 100vh; /* Full height */
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      font-family: Arial, sans-serif;
+      font-family: 'Montserrat', sans-serif;
       color: white;
       background: linear-gradient(to bottom, #4d0000, #cc0000);
-      background-attachment: fixed; /* Smooth gradient without breaks */
+      background-attachment: fixed;
     }
-    h1 {
-      font-size: 2.5rem;
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
       margin-bottom: 20px;
     }
+
+    header img {
+      width: 60px;
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      margin: 0;
+    }
+
     .links {
-      font-size: 1.2rem;
+      margin: 20px 0;
     }
+
     .links a {
-      display: block;
-      margin: 10px 0;
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background: #000;
+      border-radius: 8px;
       color: #fff;
-      font-weight: bold;
       text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
     }
+
     .links a:hover {
-      text-decoration: underline;
+      background: #444;
     }
-    .logo {
+
+    .tagline {
+      margin-top: 15px;
+      font-size: 1rem;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    .socials {
+      margin-top: 20px;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .socials a:hover {
+      color: #ffcccc;
+    }
+
+    .logo-bottom {
       position: fixed;
       bottom: 20px;
       left: 20px;
@@ -44,13 +93,28 @@
   </style>
 </head>
 <body>
-  <h1>ANTI PEDO ACTION<br>LINKS:</h1>
+  <!-- Header with logo + title -->
+  <header>
+    <img src="logo.png" alt="Anti Pedophile Action Logo">
+    <h1>ANTI PEDO ACTION</h1>
+  </header>
 
+  <!-- Link buttons -->
   <div class="links">
-    <a href="https://jaidensupport.github.io/AUTTP" target="_blank">https://jaidensupport.github.io/AUTTP</a>
-    <a href="https://tiktok.com/@antipedosaction" target="_blank">https://tiktok.com/@antipedosaction</a>
+    <a href="https://jaidensupport.github.io/AUTTP" target="_blank">Visit AUTTP</a>
+    <a href="https://tiktok.com/@antipedosaction" target="_blank">Follow on TikTok</a>
   </div>
 
-  <img src="logo.png" alt="Anti Pedophile Action Logo" class="logo">
+  <!-- Tagline -->
+  <p class="tagline">Spreading awareness. Protecting kids. Taking action.</p>
+
+  <!-- Social icons -->
+  <div class="socials">
+    <a href="https://tiktok.com/@antipedosaction" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://jaidensupport.github.io/AUTTP" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+
+  <!-- Bottom-left logo -->
+  <img src="logo.png" alt="Anti Pedophile Action Logo" class="logo-bottom">
 </body>
 </html>
